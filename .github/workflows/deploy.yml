@@ -27,6 +27,13 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v6
 
+      - name: Prepare clean URL pages
+        run: |
+          for page in buy impressum pricing privacy support tc team terms; do
+            mkdir -p "$page"
+            cp "$page.html" "$page/index.html"
+          done
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
