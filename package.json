@@ -1,0 +1,13 @@
+{
+  "name": "spreadsheet-importer",
+  "version": "1.0.0",
+  "description": "Spreadsheet Importer Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s .",
+    "dev": "serve -s ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+} 

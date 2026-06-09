@@ -1,0 +1,2550 @@
+<!DOCTYPE html>
+<html class="style-blue-3  custom_fonts comps live_website unicorn-platform-website" lang="en">
+
+
+<head>
+  
+	<!-- This page is running on Unicorn Platform. Generated at April 26, 2025, 2:49 PM-->
+  
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="alternate" href="https://spreadsheet-importer.com/" hreflang="en" />
+	
+  
+    <link rel="stylesheet" href="https://static-cdn.unicornplatform.com/2025-04-24.610/css/main.css">
+  
+
+  
+    <script>
+      window.isJsDelayed = false;
+    </script>
+    <script src="https://static-cdn.unicornplatform.com/2025-04-24.610/js/main.js" defer></script>
+  
+	
+  
+    
+      <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,700&display=swap" rel="stylesheet">
+    
+  
+
+	
+		<link rel="icon" type="image/png" href="https://unicorn-images.b-cdn.net/417741d5-ebb8-4205-96c0-54211a5ca994?optimizer=gif" sizes="16x16" />
+	
+	<meta property="og:type" content="website">
+
+    
+        <title>UI5 Spreadsheet Importer and Upload Tool for Fiori Elements and Freestyle Apps using CAP or RAP</title>
+        <meta property="og:title" content="UI5 Spreadsheet Importer and Upload Tool for Fiori Elements and Freestyle Apps using CAP or RAP" />
+        <meta name="twitter:title" content="UI5 Spreadsheet Importer and Upload Tool for Fiori Elements and Freestyle Apps using CAP or RAP" />
+    
+
+    
+        <meta name="description" content="Streamline your Fiori Elements spreadsheet uploads with our open-source UI5 custom control. Explore our features, try the live demo, or book an appointment to learn more.">
+        <meta property="og:description" content="Streamline your Fiori Elements spreadsheet uploads with our open-source UI5 custom control. Explore our features, try the live demo, or book an appointment to learn more."/>
+        <meta name="twitter:description" content="Streamline your Fiori Elements spreadsheet uploads with our open-source UI5 custom control. Explore our features, try the live demo, or book an appointment to learn more." />
+    
+
+	
+		<meta property="og:image" content="https://unicorn-images.b-cdn.net/0f81d9f3-4236-4a84-8cb0-266dc8a46033?optimizer=gif"/>
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:image" content="https://unicorn-images.b-cdn.net/0f81d9f3-4236-4a84-8cb0-266dc8a46033?optimizer=gif">
+	
+
+  
+  <link href="https://spreadsheet-importer.com/" rel="canonical"><meta name="twitter:url" content="https://spreadsheet-importer.com/"><meta property="og:url" content="https://spreadsheet-importer.com/">
+	
+	
+
+  
+  
+    <script>
+      window.unicornEnv = "production"
+    </script>
+  
+  
+	
+	
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_LhXnSnWMQMPbNodkan26Z0oQEwAKOyDHOxTrmDCPfMD',{api_host:'https://eu.posthog.com',persistence: 'memory'})
+</script>
+<script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+
+  
+
+  
+  
+</head>
+
+<body class="font-work-sans comps  has-nocache" id="84450-176979">
+
+    
+	
+	
+
+
+
+
+
+
+
+	<nav 
+  id="uni-navigation-bar" 
+  class="js-nav nav-02 "
+  
+  >
+		<div class="container container--large">
+			<div class="nav-02__box">
+				<div class="nav-02__logo"><a aria-label="Home" class="nav-02__link" href="/" target="_self">
+					
+					
+				</a></div>
+				<div class="nav-02__links js-menu">
+					<div class="nav-02__list_wrapper  ">
+						<ul class="nav-02__list nav-02__list--desktop">
+                        
+                        
+                            
+
+
+    
+        
+            
+                <li class="nav-02__item">
+                    
+                        <a
+                            class="button   button--black-outline  button--empty "
+                                href="https://spreadsheet-importer.com/#tabs-04-59431" target="_self"><span class="button__text">Features</span>
+                            </a>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li class="nav-02__item">
+                    
+                        <button class="button   button--black-outline  button--empty  button--has-dropdown button--has-arrow js-toggle-dropdown "><span class="button__text">Resources</span>
+                            <span class="dropdown">
+                                <ul class="dropdown__list">
+                                
+                                    
+                                        <li class="dropdown__item">
+                                            <a href="https://docs.spreadsheet-importer.com/" target="_blank" class="button button--empty button--black-outline">
+                                                <span class="button__text">Documentation</span>
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li class="dropdown__item">
+                                            <a href="https://github.com/spreadsheetimporter/ui5-cc-spreadsheetimporter" target="_blank" class="button button--empty button--black-outline">
+                                                <span class="button__text">GitHub Repository</span>
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li class="dropdown__item">
+                                            <a href="https://docs.spreadsheet-importer.com/pages/Troubleshooting/" target="_blank" class="button button--empty button--black-outline">
+                                                <span class="button__text">Troubleshooting</span>
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li class="dropdown__item">
+                                            <a href="https://github.com/marianfoo/ui5-cc-spreadsheetimporter/issues/new/choose" target="_blank" class="button button--empty button--black-outline">
+                                                <span class="button__text">Create a support Ticket</span>
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li class="dropdown__item">
+                                            <a href="/team" target="_self" class="button button--empty button--black-outline">
+                                                <span class="button__text">Team</span>
+                                            </a>
+                                        </li>
+                                    
+                                
+                                </ul>
+                            </span>
+                        </button>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li class="nav-02__item">
+                    
+                        <a
+                            class="button   button--black-outline  button--empty "
+                                href="https://spreadsheet-importer.com/#features-09-888271" target="_self"><span class="button__text">Pricing</span>
+                            </a>
+                    
+                </li>
+            
+        
+    
+
+
+                        
+							<li class="nav-02__item">
+								
+	
+
+
+							</li>
+						</ul>
+						<ul class="nav-02__list nav-02__list--mobile">
+                            
+                            
+                                
+
+
+    
+        
+            
+                <li class="nav-02__item">
+                    
+                        <a
+                            class="button   button--black-outline  button--empty "
+                                href="https://spreadsheet-importer.com/#tabs-04-59431" target="_self"><span class="button__text">Features</span>
+                            </a>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li class="nav-02__item">
+                    
+                        <button class="button   button--black-outline  button--empty  button--has-dropdown button--has-arrow js-toggle-dropdown "><span class="button__text">Resources</span>
+                            <span class="dropdown">
+                                <ul class="dropdown__list">
+                                
+                                    
+                                        <li class="dropdown__item">
+                                            <a href="https://docs.spreadsheet-importer.com/" target="_blank" class="button button--empty button--black-outline">
+                                                <span class="button__text">Documentation</span>
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li class="dropdown__item">
+                                            <a href="https://github.com/spreadsheetimporter/ui5-cc-spreadsheetimporter" target="_blank" class="button button--empty button--black-outline">
+                                                <span class="button__text">GitHub Repository</span>
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li class="dropdown__item">
+                                            <a href="https://docs.spreadsheet-importer.com/pages/Troubleshooting/" target="_blank" class="button button--empty button--black-outline">
+                                                <span class="button__text">Troubleshooting</span>
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li class="dropdown__item">
+                                            <a href="https://github.com/marianfoo/ui5-cc-spreadsheetimporter/issues/new/choose" target="_blank" class="button button--empty button--black-outline">
+                                                <span class="button__text">Create a support Ticket</span>
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li class="dropdown__item">
+                                            <a href="/team" target="_self" class="button button--empty button--black-outline">
+                                                <span class="button__text">Team</span>
+                                            </a>
+                                        </li>
+                                    
+                                
+                                </ul>
+                            </span>
+                        </button>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li class="nav-02__item">
+                    
+                        <a
+                            class="button   button--black-outline  button--empty "
+                                href="https://spreadsheet-importer.com/#features-09-888271" target="_self"><span class="button__text">Pricing</span>
+                            </a>
+                    
+                </li>
+            
+        
+    
+
+
+                            
+							<li class="nav-02__item">
+								
+	
+
+
+							</li>
+						</ul>
+					</div>
+          
+            
+              <div class="nav-02__burger">
+	<button class="burger burger--black js-open-menu" type="button" title="Open menu">
+		<div class="burger__box">
+			<div class="burger__inner"></div>
+		</div>
+	</button>
+</div>
+
+            
+          
+				</div>
+			</div>
+		</div>
+	</nav>
+  
+  
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+	<div 
+    class="page-component__bg_image_box    bg-white-color  first_component   header-65-parent  is-first-component"
+    id="header-65-632311"
+    
+    
+  >
+		
+		<div 
+      class="page-component__bg_overlay_box " 
+      style=""
+    >
+			
+		</div>
+    
+		<div class="page-component__wrapper" style="z-index: 16;padding-top:70px;padding-bottom:70px;">
+      
+        
+
+	
+	
+	
+  
+  
+	<header class="header-65 graphics-image default-graphics-image">
+		<div class="container container--large header-65__container">
+			<div class="header-65__main">
+				<div class="header-65__main_content">
+					
+						
+							<h1 class="title-text heading heading--accent header-65__heading " >UI5 Spreadsheet Importer</h1>
+						
+					
+					
+						<div class="subtitle-text header-65__text content_box "><p>Your ultimate solution for spreadsheet uploads within UI5 Applications</p>
+</div>
+					
+					<div class="header-65__action_box">
+						
+	
+<div class="buttons-set"><ul class="buttons-set__list"><li class="buttons-set__item"><a
+				 data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url="" data-cancel-payment-url=""
+
+				 class="button button--accent-outline " href="https://livedemo.spreadsheet-importer.com/" target="_blank"    ><span class="button__text">Try it now</span></a></li><li class="buttons-set__item"><a
+				 data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url="" data-cancel-payment-url=""
+
+				 class="button button--accent-bg " href="https://docs.spreadsheet-importer.com/pages/GettingStarted/" target="_blank"    ><span class="button__text">Get Started</span></a></li><li class="buttons-set__item"><a
+
+			 data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url="" data-cancel-payment-url=""
+
+				class="pill-link   pill-link--blue js-open-custom-popup-button"
+				href="https://www.linkedin.com/company/spreadsheet-importer/"
+        target="_blank" 
+          
+		data-custom-popup-id="popup-01-70241"
+		><span class="pill-link__pill">Contact</span><span class="pill-link__text">
+                Need help to integrate?
+            </span><span class="pill-link__icon"><span class="icon"><svg viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg"><path
+		                    d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z"
+		                    fill-rule="nonzero"
+		                    fill="#00396B"></path></svg></span></span></a></li></ul></div>
+
+					</div>
+				</div>
+			</div>
+			<div class="header-65__img">
+				<div class="header-65__img_wrapper">
+					<div class="header-65__big_mockup">
+            
+
+            
+
+						 
+
+
+
+
+
+<div class="mockup_v2 mockup_v2--apple_macbook_air">
+  <div class="mockup_v2__img_box">
+    <div 
+        class="mockup_v2__screenshot mockup_v2__area"
+        
+    >
+      
+
+        
+        <img
+          
+          class="mockup_v2__screenshot_img"
+          alt="Iscreen shoter   google chrome   230628133754"
+          
+            src="https://unicorn-images.b-cdn.net/0df5fb03-326e-4fc9-9b48-d0a76e86d242?optimizer=gif"
+            srcset="https://unicorn-images.b-cdn.net/0df5fb03-326e-4fc9-9b48-d0a76e86d242?optimizer=gif&amp;width=515&amp;height=272 515w,https://unicorn-images.b-cdn.net/0df5fb03-326e-4fc9-9b48-d0a76e86d242?optimizer=gif&amp;width=576&amp;height=304 576w,https://unicorn-images.b-cdn.net/0df5fb03-326e-4fc9-9b48-d0a76e86d242?optimizer=gif&amp;width=632&amp;height=333 632w,https://unicorn-images.b-cdn.net/0df5fb03-326e-4fc9-9b48-d0a76e86d242?optimizer=gif&amp;width=826&amp;height=435 826w,https://unicorn-images.b-cdn.net/0df5fb03-326e-4fc9-9b48-d0a76e86d242?optimizer=gif&amp;width=1009&amp;height=532 1009w,https://unicorn-images.b-cdn.net/0df5fb03-326e-4fc9-9b48-d0a76e86d242?optimizer=gif&amp;width=1094&amp;height=577 1094w,https://unicorn-images.b-cdn.net/0df5fb03-326e-4fc9-9b48-d0a76e86d242?optimizer=gif&amp;width=1030&amp;height=544 1030w,https://unicorn-images.b-cdn.net/0df5fb03-326e-4fc9-9b48-d0a76e86d242?optimizer=gif&amp;width=1152&amp;height=608 1152w,https://unicorn-images.b-cdn.net/0df5fb03-326e-4fc9-9b48-d0a76e86d242?optimizer=gif&amp;width=1264&amp;height=666 1264w,https://unicorn-images.b-cdn.net/0df5fb03-326e-4fc9-9b48-d0a76e86d242?optimizer=gif&amp;width=1652&amp;height=870 1652w,https://unicorn-images.b-cdn.net/0df5fb03-326e-4fc9-9b48-d0a76e86d242?optimizer=gif&amp;width=1659&amp;height=874 1659w,https://unicorn-images.b-cdn.net/0df5fb03-326e-4fc9-9b48-d0a76e86d242?optimizer=gif&amp;width=1545&amp;height=816 1545w,https://unicorn-images.b-cdn.net/0df5fb03-326e-4fc9-9b48-d0a76e86d242?optimizer=gif&amp;width=1659&amp;height=874 1659w,"
+            sizes="(max-width: 320px) 515px,(max-width: 375px) 576px,(max-width: 425px) 632px,(max-width: 600px) 826px,(max-width: 768px) 1009px,1094px"
+          
+        />
+        
+
+      
+    </div>
+    <img
+      
+      class="mockup_v2__device_img js-tab-content-item"
+      alt="Device frame"
+      
+
+      
+        src="https://unicorn-images.b-cdn.net/31420c85-6343-4d22-b2ea-60f5222b9fb3?optimizer=gif"
+        srcset="https://unicorn-images.b-cdn.net/31420c85-6343-4d22-b2ea-60f5222b9fb3?optimizer=gif&amp;width=290&amp;height=170 290w,https://unicorn-images.b-cdn.net/31420c85-6343-4d22-b2ea-60f5222b9fb3?optimizer=gif&amp;width=345&amp;height=202 345w,https://unicorn-images.b-cdn.net/31420c85-6343-4d22-b2ea-60f5222b9fb3?optimizer=gif&amp;width=395&amp;height=232 395w,https://unicorn-images.b-cdn.net/31420c85-6343-4d22-b2ea-60f5222b9fb3?optimizer=gif&amp;width=570&amp;height=334 570w,https://unicorn-images.b-cdn.net/31420c85-6343-4d22-b2ea-60f5222b9fb3?optimizer=gif&amp;width=738&amp;height=433 738w,https://unicorn-images.b-cdn.net/31420c85-6343-4d22-b2ea-60f5222b9fb3?optimizer=gif&amp;width=815&amp;height=478 815w,https://unicorn-images.b-cdn.net/31420c85-6343-4d22-b2ea-60f5222b9fb3?optimizer=gif&amp;width=580&amp;height=340 580w,https://unicorn-images.b-cdn.net/31420c85-6343-4d22-b2ea-60f5222b9fb3?optimizer=gif&amp;width=690&amp;height=404 690w,https://unicorn-images.b-cdn.net/31420c85-6343-4d22-b2ea-60f5222b9fb3?optimizer=gif&amp;width=790&amp;height=464 790w,https://unicorn-images.b-cdn.net/31420c85-6343-4d22-b2ea-60f5222b9fb3?optimizer=gif&amp;width=1140&amp;height=668 1140w,https://unicorn-images.b-cdn.net/31420c85-6343-4d22-b2ea-60f5222b9fb3?optimizer=gif&amp;width=1476&amp;height=866 1476w,https://unicorn-images.b-cdn.net/31420c85-6343-4d22-b2ea-60f5222b9fb3?optimizer=gif&amp;width=1630&amp;height=956 1630w,https://unicorn-images.b-cdn.net/31420c85-6343-4d22-b2ea-60f5222b9fb3?optimizer=gif&amp;width=870&amp;height=510 870w,https://unicorn-images.b-cdn.net/31420c85-6343-4d22-b2ea-60f5222b9fb3?optimizer=gif&amp;width=1035&amp;height=606 1035w,https://unicorn-images.b-cdn.net/31420c85-6343-4d22-b2ea-60f5222b9fb3?optimizer=gif&amp;width=1185&amp;height=696 1185w,https://unicorn-images.b-cdn.net/31420c85-6343-4d22-b2ea-60f5222b9fb3?optimizer=gif&amp;width=1710&amp;height=1002 1710w,https://unicorn-images.b-cdn.net/31420c85-6343-4d22-b2ea-60f5222b9fb3?optimizer=gif&amp;width=2214&amp;height=1299 2214w,https://unicorn-images.b-cdn.net/31420c85-6343-4d22-b2ea-60f5222b9fb3?optimizer=gif&amp;width=2445&amp;height=1434 2445w,"
+        sizes="(max-width: 320px) 290px,(max-width: 375px) 345px,(max-width: 425px) 395px,(max-width: 600px) 570px,(max-width: 768px) 738px,815px"
+      
+    />
+  </div>
+</div>
+
+
+
+
+					</div>
+					<div class="header-65__small_mockup">
+            
+
+            
+
+						 
+
+
+
+
+
+<div class="mockup_v2 mockup_v2--samsung_galaxy_s20_ultra_cosmic_black">
+  <div class="mockup_v2__img_box">
+    <div 
+        class="mockup_v2__screenshot mockup_v2__area"
+        
+    >
+      
+
+        
+        <img
+          
+          class="mockup_v2__screenshot_img"
+          alt="Iscreen shoter   google chrome   230628132646"
+          
+            src="https://unicorn-images.b-cdn.net/899933a4-54a7-44f6-99e9-98bf3ef7a2a7?optimizer=gif"
+            srcset="https://unicorn-images.b-cdn.net/899933a4-54a7-44f6-99e9-98bf3ef7a2a7?optimizer=gif&amp;width=147&amp;height=326 147w,https://unicorn-images.b-cdn.net/899933a4-54a7-44f6-99e9-98bf3ef7a2a7?optimizer=gif&amp;width=156&amp;height=346 156w,https://unicorn-images.b-cdn.net/899933a4-54a7-44f6-99e9-98bf3ef7a2a7?optimizer=gif&amp;width=164&amp;height=364 164w,https://unicorn-images.b-cdn.net/899933a4-54a7-44f6-99e9-98bf3ef7a2a7?optimizer=gif&amp;width=192&amp;height=426 192w,https://unicorn-images.b-cdn.net/899933a4-54a7-44f6-99e9-98bf3ef7a2a7?optimizer=gif&amp;width=219&amp;height=486 219w,https://unicorn-images.b-cdn.net/899933a4-54a7-44f6-99e9-98bf3ef7a2a7?optimizer=gif&amp;width=232&amp;height=514 232w,https://unicorn-images.b-cdn.net/899933a4-54a7-44f6-99e9-98bf3ef7a2a7?optimizer=gif&amp;width=274&amp;height=607 274w,https://unicorn-images.b-cdn.net/899933a4-54a7-44f6-99e9-98bf3ef7a2a7?optimizer=gif&amp;width=274&amp;height=607 274w,"
+            sizes="(max-width: 320px) 147px,(max-width: 375px) 156px,(max-width: 425px) 164px,(max-width: 600px) 192px,(max-width: 768px) 219px,232px"
+          
+        />
+        
+
+      
+    </div>
+    <img
+      
+      class="mockup_v2__device_img js-tab-content-item"
+      alt="Device frame"
+      
+
+      
+        src="https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif"
+        srcset="https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=52&amp;height=102 52w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=62&amp;height=122 62w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=71&amp;height=139 71w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=103&amp;height=202 103w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=133&amp;height=261 133w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=147&amp;height=288 147w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=104&amp;height=204 104w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=124&amp;height=244 124w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=142&amp;height=278 142w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=206&amp;height=404 206w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=266&amp;height=522 266w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=294&amp;height=576 294w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=156&amp;height=306 156w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=186&amp;height=366 186w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=213&amp;height=417 213w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=309&amp;height=606 309w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=399&amp;height=783 399w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=441&amp;height=864 441w,"
+        sizes="(max-width: 320px) 52px,(max-width: 375px) 62px,(max-width: 425px) 71px,(max-width: 600px) 103px,(max-width: 768px) 133px,147px"
+      
+    />
+  </div>
+</div>
+
+
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
+      
+		</div>
+	</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+	<div 
+    class="page-component__bg_image_box    bg-white-color   tabs-04-parent  is-not-first-component"
+    id="tabs-04-59431"
+    
+    
+  >
+		
+		<div 
+      class="page-component__bg_overlay_box " 
+      style=""
+    >
+			
+		</div>
+    
+		<div class="page-component__wrapper" style="z-index: 15;padding-top:50px;padding-bottom:50px;">
+      
+        
+
+	
+    
+    
+	<div class="tabs-04 graphics-image default-graphics-image">
+		
+
+
+	
+	
+	<div class="container container--small">
+		<div class="title-box title-box--center">
+			
+				
+					<h2 class="title-text heading " >Key Features</h2>
+				
+			
+			
+				<div class="subtitle-text title-box__text content_box ">Explore the capabilities of our UI5 Spreadsheet Upload Component</div>
+			
+		</div>
+	</div>
+
+
+		<div class="container">
+			<div class="tabs-04__box">
+				<div class="tabs-04__item_container">
+					<ul class="tabs-04__item_list js-tabs-item-list">
+						
+
+              
+                
+                  
+                  <li
+                    class="tabs-04__item_box js-tab-content  state-active-tab  "
+                    data-index="tab-0"
+                    data-group="my-images-group-tabs-04-59431"
+                  >
+                    
+                      <div class="tabs-04__button_item tabs-04__button_item--mobile-only">
+                        <button
+                            class="tabs-04__button state-active-tab"
+                            type="button"
+                            data-index="tab-0"
+                            data-group="my-images-group-tabs-04-59431">
+                          <h2 class="content-text def-12 tabs-04__button_title">Create, Update and Download</h2>
+                          <div class="content-text tabs-04__button_text">It is possible to create and update records from Excel files.</div>
+                        </button>
+                      </div>
+                    
+                  <div 
+                    class="tabs-04__item js-tab-content-item"
+                    data-height="620"
+                  >
+                    <img 
+                      loading="lazy" 
+                      class="tabs-04__img js-lightbox-single-image" 
+                      alt="Tab content image"
+                      data-width="1231"
+                      data-height="620"
+
+                      
+                        src="https://unicorn-images.b-cdn.net/5c0aa8b7-4068-4a1c-beec-227837f0c6e7?optimizer=gif"
+                        srcset="https://unicorn-images.b-cdn.net/5c0aa8b7-4068-4a1c-beec-227837f0c6e7?optimizer=gif&amp;width=290&amp;height=147 290w,https://unicorn-images.b-cdn.net/5c0aa8b7-4068-4a1c-beec-227837f0c6e7?optimizer=gif&amp;width=345&amp;height=174 345w,https://unicorn-images.b-cdn.net/5c0aa8b7-4068-4a1c-beec-227837f0c6e7?optimizer=gif&amp;width=395&amp;height=199 395w,https://unicorn-images.b-cdn.net/5c0aa8b7-4068-4a1c-beec-227837f0c6e7?optimizer=gif&amp;width=570&amp;height=288 570w,https://unicorn-images.b-cdn.net/5c0aa8b7-4068-4a1c-beec-227837f0c6e7?optimizer=gif&amp;width=720&amp;height=363 720w,https://unicorn-images.b-cdn.net/5c0aa8b7-4068-4a1c-beec-227837f0c6e7?optimizer=gif&amp;width=369&amp;height=186 369w,https://unicorn-images.b-cdn.net/5c0aa8b7-4068-4a1c-beec-227837f0c6e7?optimizer=gif&amp;width=525&amp;height=265 525w,https://unicorn-images.b-cdn.net/5c0aa8b7-4068-4a1c-beec-227837f0c6e7?optimizer=gif&amp;width=580&amp;height=294 580w,https://unicorn-images.b-cdn.net/5c0aa8b7-4068-4a1c-beec-227837f0c6e7?optimizer=gif&amp;width=690&amp;height=348 690w,https://unicorn-images.b-cdn.net/5c0aa8b7-4068-4a1c-beec-227837f0c6e7?optimizer=gif&amp;width=790&amp;height=398 790w,https://unicorn-images.b-cdn.net/5c0aa8b7-4068-4a1c-beec-227837f0c6e7?optimizer=gif&amp;width=1140&amp;height=576 1140w,https://unicorn-images.b-cdn.net/5c0aa8b7-4068-4a1c-beec-227837f0c6e7?optimizer=gif&amp;width=1231&amp;height=620 1231w,https://unicorn-images.b-cdn.net/5c0aa8b7-4068-4a1c-beec-227837f0c6e7?optimizer=gif&amp;width=870&amp;height=441 870w,https://unicorn-images.b-cdn.net/5c0aa8b7-4068-4a1c-beec-227837f0c6e7?optimizer=gif&amp;width=1035&amp;height=522 1035w,https://unicorn-images.b-cdn.net/5c0aa8b7-4068-4a1c-beec-227837f0c6e7?optimizer=gif&amp;width=1185&amp;height=597 1185w,https://unicorn-images.b-cdn.net/5c0aa8b7-4068-4a1c-beec-227837f0c6e7?optimizer=gif&amp;width=1231&amp;height=620 1231w,"
+                        sizes="(max-width: 320px) 290px,(max-width: 375px) 345px,(max-width: 425px) 395px,(max-width: 600px) 570px,(max-width: 750px) 720px,(max-width: 768px) 369px,525px"
+                      
+
+                    />
+                  </div>
+                  </li>
+                
+              
+
+						
+
+              
+                
+              
+
+						
+
+              
+                
+                  
+                  <li
+                    class="tabs-04__item_box js-tab-content "
+                    data-index="tab-2"
+                    data-group="my-images-group-tabs-04-59431"
+                  >
+                    
+                      <div class="tabs-04__button_item tabs-04__button_item--mobile-only">
+                        <button
+                            class="tabs-04__button state-active-tab"
+                            type="button"
+                            data-index="tab-2"
+                            data-group="my-images-group-tabs-04-59431">
+                          <h2 class="content-text def-12 tabs-04__button_title">Backend agnostic</h2>
+                          <div class="content-text tabs-04__button_text">Just the data is read from spreadsheet in the frontend and sent to the backend using standard UI5 APIs. The file is not send to the backend.
+Every SAP OData Service possible (CAP, RAP, SEGW and ECC or S/4)</div>
+                        </button>
+                      </div>
+                    
+                  <div 
+                    class="tabs-04__item js-tab-content-item"
+                    data-height="874"
+                  >
+                    <img 
+                      loading="lazy" 
+                      class="tabs-04__img js-lightbox-single-image" 
+                      alt="Iscreen shoter   google chrome   230628133754"
+                      data-width="1659"
+                      data-height="874"
+
+                      
+                        src="https://unicorn-images.b-cdn.net/251a3194-dec4-4fc0-98ff-da0847aaedd3?optimizer=gif"
+                        srcset="https://unicorn-images.b-cdn.net/251a3194-dec4-4fc0-98ff-da0847aaedd3?optimizer=gif&amp;width=290&amp;height=153 290w,https://unicorn-images.b-cdn.net/251a3194-dec4-4fc0-98ff-da0847aaedd3?optimizer=gif&amp;width=345&amp;height=182 345w,https://unicorn-images.b-cdn.net/251a3194-dec4-4fc0-98ff-da0847aaedd3?optimizer=gif&amp;width=395&amp;height=209 395w,https://unicorn-images.b-cdn.net/251a3194-dec4-4fc0-98ff-da0847aaedd3?optimizer=gif&amp;width=570&amp;height=301 570w,https://unicorn-images.b-cdn.net/251a3194-dec4-4fc0-98ff-da0847aaedd3?optimizer=gif&amp;width=720&amp;height=380 720w,https://unicorn-images.b-cdn.net/251a3194-dec4-4fc0-98ff-da0847aaedd3?optimizer=gif&amp;width=369&amp;height=195 369w,https://unicorn-images.b-cdn.net/251a3194-dec4-4fc0-98ff-da0847aaedd3?optimizer=gif&amp;width=525&amp;height=277 525w,https://unicorn-images.b-cdn.net/251a3194-dec4-4fc0-98ff-da0847aaedd3?optimizer=gif&amp;width=580&amp;height=306 580w,https://unicorn-images.b-cdn.net/251a3194-dec4-4fc0-98ff-da0847aaedd3?optimizer=gif&amp;width=690&amp;height=364 690w,https://unicorn-images.b-cdn.net/251a3194-dec4-4fc0-98ff-da0847aaedd3?optimizer=gif&amp;width=790&amp;height=418 790w,https://unicorn-images.b-cdn.net/251a3194-dec4-4fc0-98ff-da0847aaedd3?optimizer=gif&amp;width=1140&amp;height=602 1140w,https://unicorn-images.b-cdn.net/251a3194-dec4-4fc0-98ff-da0847aaedd3?optimizer=gif&amp;width=1440&amp;height=760 1440w,https://unicorn-images.b-cdn.net/251a3194-dec4-4fc0-98ff-da0847aaedd3?optimizer=gif&amp;width=738&amp;height=390 738w,https://unicorn-images.b-cdn.net/251a3194-dec4-4fc0-98ff-da0847aaedd3?optimizer=gif&amp;width=1050&amp;height=554 1050w,https://unicorn-images.b-cdn.net/251a3194-dec4-4fc0-98ff-da0847aaedd3?optimizer=gif&amp;width=870&amp;height=459 870w,https://unicorn-images.b-cdn.net/251a3194-dec4-4fc0-98ff-da0847aaedd3?optimizer=gif&amp;width=1035&amp;height=546 1035w,https://unicorn-images.b-cdn.net/251a3194-dec4-4fc0-98ff-da0847aaedd3?optimizer=gif&amp;width=1185&amp;height=627 1185w,https://unicorn-images.b-cdn.net/251a3194-dec4-4fc0-98ff-da0847aaedd3?optimizer=gif&amp;width=1659&amp;height=874 1659w,"
+                        sizes="(max-width: 320px) 290px,(max-width: 375px) 345px,(max-width: 425px) 395px,(max-width: 600px) 570px,(max-width: 750px) 720px,(max-width: 768px) 369px,525px"
+                      
+
+                    />
+                  </div>
+                  </li>
+                
+              
+
+						
+
+              
+                
+                  
+                  <li
+                    class="tabs-04__item_box js-tab-content "
+                    data-index="tab-3"
+                    data-group="my-images-group-tabs-04-59431"
+                  >
+                    
+                      <div class="tabs-04__button_item tabs-04__button_item--mobile-only">
+                        <button
+                            class="tabs-04__button state-active-tab"
+                            type="button"
+                            data-index="tab-3"
+                            data-group="my-images-group-tabs-04-59431">
+                          <h2 class="content-text def-12 tabs-04__button_title">Support of many Scenarios</h2>
+                          <div class="content-text tabs-04__button_text">Use in Fiori Elements or Freestyle from UI5 Version 1.71 up to 2.0</div>
+                        </button>
+                      </div>
+                    
+                  <div 
+                    class="tabs-04__item js-tab-content-item"
+                    data-height="444"
+                  >
+                    <img 
+                      loading="lazy" 
+                      class="tabs-04__img js-lightbox-single-image" 
+                      alt="Iscreen shoter   google chrome   230628134518"
+                      data-width="790"
+                      data-height="444"
+
+                      
+                        src="https://unicorn-images.b-cdn.net/a8505abb-c24e-4fa1-9f21-6b3e7cc66841?optimizer=gif"
+                        srcset="https://unicorn-images.b-cdn.net/a8505abb-c24e-4fa1-9f21-6b3e7cc66841?optimizer=gif&amp;width=290&amp;height=163 290w,https://unicorn-images.b-cdn.net/a8505abb-c24e-4fa1-9f21-6b3e7cc66841?optimizer=gif&amp;width=345&amp;height=194 345w,https://unicorn-images.b-cdn.net/a8505abb-c24e-4fa1-9f21-6b3e7cc66841?optimizer=gif&amp;width=395&amp;height=222 395w,https://unicorn-images.b-cdn.net/a8505abb-c24e-4fa1-9f21-6b3e7cc66841?optimizer=gif&amp;width=570&amp;height=321 570w,https://unicorn-images.b-cdn.net/a8505abb-c24e-4fa1-9f21-6b3e7cc66841?optimizer=gif&amp;width=720&amp;height=405 720w,https://unicorn-images.b-cdn.net/a8505abb-c24e-4fa1-9f21-6b3e7cc66841?optimizer=gif&amp;width=369&amp;height=208 369w,https://unicorn-images.b-cdn.net/a8505abb-c24e-4fa1-9f21-6b3e7cc66841?optimizer=gif&amp;width=525&amp;height=296 525w,https://unicorn-images.b-cdn.net/a8505abb-c24e-4fa1-9f21-6b3e7cc66841?optimizer=gif&amp;width=580&amp;height=326 580w,https://unicorn-images.b-cdn.net/a8505abb-c24e-4fa1-9f21-6b3e7cc66841?optimizer=gif&amp;width=690&amp;height=388 690w,https://unicorn-images.b-cdn.net/a8505abb-c24e-4fa1-9f21-6b3e7cc66841?optimizer=gif&amp;width=790&amp;height=444 790w,https://unicorn-images.b-cdn.net/a8505abb-c24e-4fa1-9f21-6b3e7cc66841?optimizer=gif&amp;width=790&amp;height=444 790w,"
+                        sizes="(max-width: 320px) 290px,(max-width: 375px) 345px,(max-width: 425px) 395px,(max-width: 600px) 570px,(max-width: 750px) 720px,(max-width: 768px) 369px,525px"
+                      
+
+                    />
+                  </div>
+                  </li>
+                
+              
+
+						
+
+              
+                
+                  
+                  <li
+                    class="tabs-04__item_box js-tab-content "
+                    data-index="tab-4"
+                    data-group="my-images-group-tabs-04-59431"
+                  >
+                    
+                      <div class="tabs-04__button_item tabs-04__button_item--mobile-only">
+                        <button
+                            class="tabs-04__button state-active-tab"
+                            type="button"
+                            data-index="tab-4"
+                            data-group="my-images-group-tabs-04-59431">
+                          <h2 class="content-text def-12 tabs-04__button_title">Multiple Languages</h2>
+                          <div class="content-text tabs-04__button_text">Currently Available is german, english, french, spanish, italian, japanese, hindi and chinese</div>
+                        </button>
+                      </div>
+                    
+                  <div 
+                    class="tabs-04__item js-tab-content-item"
+                    data-height="345"
+                  >
+                    <img 
+                      loading="lazy" 
+                      class="tabs-04__img js-lightbox-single-image" 
+                      alt="Iscreen shoter   google chrome   230628134341"
+                      data-width="815"
+                      data-height="345"
+
+                      
+                        src="https://unicorn-images.b-cdn.net/0e31ab5f-34be-4183-b1f6-8e453337e4fa?optimizer=gif"
+                        srcset="https://unicorn-images.b-cdn.net/0e31ab5f-34be-4183-b1f6-8e453337e4fa?optimizer=gif&amp;width=290&amp;height=123 290w,https://unicorn-images.b-cdn.net/0e31ab5f-34be-4183-b1f6-8e453337e4fa?optimizer=gif&amp;width=345&amp;height=147 345w,https://unicorn-images.b-cdn.net/0e31ab5f-34be-4183-b1f6-8e453337e4fa?optimizer=gif&amp;width=395&amp;height=168 395w,https://unicorn-images.b-cdn.net/0e31ab5f-34be-4183-b1f6-8e453337e4fa?optimizer=gif&amp;width=570&amp;height=242 570w,https://unicorn-images.b-cdn.net/0e31ab5f-34be-4183-b1f6-8e453337e4fa?optimizer=gif&amp;width=720&amp;height=305 720w,https://unicorn-images.b-cdn.net/0e31ab5f-34be-4183-b1f6-8e453337e4fa?optimizer=gif&amp;width=369&amp;height=157 369w,https://unicorn-images.b-cdn.net/0e31ab5f-34be-4183-b1f6-8e453337e4fa?optimizer=gif&amp;width=525&amp;height=223 525w,https://unicorn-images.b-cdn.net/0e31ab5f-34be-4183-b1f6-8e453337e4fa?optimizer=gif&amp;width=580&amp;height=246 580w,https://unicorn-images.b-cdn.net/0e31ab5f-34be-4183-b1f6-8e453337e4fa?optimizer=gif&amp;width=690&amp;height=294 690w,https://unicorn-images.b-cdn.net/0e31ab5f-34be-4183-b1f6-8e453337e4fa?optimizer=gif&amp;width=790&amp;height=336 790w,https://unicorn-images.b-cdn.net/0e31ab5f-34be-4183-b1f6-8e453337e4fa?optimizer=gif&amp;width=815&amp;height=345 815w,https://unicorn-images.b-cdn.net/0e31ab5f-34be-4183-b1f6-8e453337e4fa?optimizer=gif&amp;width=815&amp;height=345 815w,"
+                        sizes="(max-width: 320px) 290px,(max-width: 375px) 345px,(max-width: 425px) 395px,(max-width: 600px) 570px,(max-width: 750px) 720px,(max-width: 768px) 369px,525px"
+                      
+
+                    />
+                  </div>
+                  </li>
+                
+              
+
+						
+
+              
+                
+                  
+                  <li
+                    class="tabs-04__item_box js-tab-content "
+                    data-index="tab-5"
+                    data-group="my-images-group-tabs-04-59431"
+                  >
+                    
+                      <div class="tabs-04__button_item tabs-04__button_item--mobile-only">
+                        <button
+                            class="tabs-04__button state-active-tab"
+                            type="button"
+                            data-index="tab-5"
+                            data-group="my-images-group-tabs-04-59431">
+                          <h2 class="content-text def-12 tabs-04__button_title">Easy to Implement</h2>
+                          <div class="content-text tabs-04__button_text">&quot;Drop-in&quot; into your application</div>
+                        </button>
+                      </div>
+                    
+                  <div 
+                    class="tabs-04__item js-tab-content-item"
+                    data-height="1108"
+                  >
+                    <img 
+                      loading="lazy" 
+                      class="tabs-04__img js-lightbox-single-image" 
+                      alt="Iscreen shoter   google chrome   230628133754"
+                      data-width="1705"
+                      data-height="1108"
+
+                      
+                        src="https://unicorn-images.b-cdn.net/5321108e-1c00-48e6-ace2-e4b86aa666b0?optimizer=gif"
+                        srcset="https://unicorn-images.b-cdn.net/5321108e-1c00-48e6-ace2-e4b86aa666b0?optimizer=gif&amp;width=290&amp;height=189 290w,https://unicorn-images.b-cdn.net/5321108e-1c00-48e6-ace2-e4b86aa666b0?optimizer=gif&amp;width=345&amp;height=225 345w,https://unicorn-images.b-cdn.net/5321108e-1c00-48e6-ace2-e4b86aa666b0?optimizer=gif&amp;width=395&amp;height=257 395w,https://unicorn-images.b-cdn.net/5321108e-1c00-48e6-ace2-e4b86aa666b0?optimizer=gif&amp;width=570&amp;height=371 570w,https://unicorn-images.b-cdn.net/5321108e-1c00-48e6-ace2-e4b86aa666b0?optimizer=gif&amp;width=720&amp;height=468 720w,https://unicorn-images.b-cdn.net/5321108e-1c00-48e6-ace2-e4b86aa666b0?optimizer=gif&amp;width=369&amp;height=240 369w,https://unicorn-images.b-cdn.net/5321108e-1c00-48e6-ace2-e4b86aa666b0?optimizer=gif&amp;width=525&amp;height=342 525w,https://unicorn-images.b-cdn.net/5321108e-1c00-48e6-ace2-e4b86aa666b0?optimizer=gif&amp;width=580&amp;height=378 580w,https://unicorn-images.b-cdn.net/5321108e-1c00-48e6-ace2-e4b86aa666b0?optimizer=gif&amp;width=690&amp;height=450 690w,https://unicorn-images.b-cdn.net/5321108e-1c00-48e6-ace2-e4b86aa666b0?optimizer=gif&amp;width=790&amp;height=514 790w,https://unicorn-images.b-cdn.net/5321108e-1c00-48e6-ace2-e4b86aa666b0?optimizer=gif&amp;width=1140&amp;height=742 1140w,https://unicorn-images.b-cdn.net/5321108e-1c00-48e6-ace2-e4b86aa666b0?optimizer=gif&amp;width=1440&amp;height=936 1440w,https://unicorn-images.b-cdn.net/5321108e-1c00-48e6-ace2-e4b86aa666b0?optimizer=gif&amp;width=738&amp;height=480 738w,https://unicorn-images.b-cdn.net/5321108e-1c00-48e6-ace2-e4b86aa666b0?optimizer=gif&amp;width=1050&amp;height=684 1050w,https://unicorn-images.b-cdn.net/5321108e-1c00-48e6-ace2-e4b86aa666b0?optimizer=gif&amp;width=870&amp;height=567 870w,https://unicorn-images.b-cdn.net/5321108e-1c00-48e6-ace2-e4b86aa666b0?optimizer=gif&amp;width=1035&amp;height=675 1035w,https://unicorn-images.b-cdn.net/5321108e-1c00-48e6-ace2-e4b86aa666b0?optimizer=gif&amp;width=1185&amp;height=771 1185w,https://unicorn-images.b-cdn.net/5321108e-1c00-48e6-ace2-e4b86aa666b0?optimizer=gif&amp;width=1705&amp;height=1108 1705w,"
+                        sizes="(max-width: 320px) 290px,(max-width: 375px) 345px,(max-width: 425px) 395px,(max-width: 600px) 570px,(max-width: 750px) 720px,(max-width: 768px) 369px,525px"
+                      
+
+                    />
+                  </div>
+                  </li>
+                
+              
+
+						
+
+              
+                
+                  
+                  <li
+                    class="tabs-04__item_box js-tab-content "
+                    data-index="tab-6"
+                    data-group="my-images-group-tabs-04-59431"
+                  >
+                    
+                      <div class="tabs-04__button_item tabs-04__button_item--mobile-only">
+                        <button
+                            class="tabs-04__button state-active-tab"
+                            type="button"
+                            data-index="tab-6"
+                            data-group="my-images-group-tabs-04-59431">
+                          <h2 class="content-text def-12 tabs-04__button_title">Many Configurations</h2>
+                          <div class="content-text tabs-04__button_text">Options are available to customize to your requirement</div>
+                        </button>
+                      </div>
+                    
+                  <div 
+                    class="tabs-04__item js-tab-content-item"
+                    data-height="1089"
+                  >
+                    <img 
+                      loading="lazy" 
+                      class="tabs-04__img js-lightbox-single-image" 
+                      alt="Iscreen shoter   google chrome   230628134555"
+                      data-width="1379"
+                      data-height="1089"
+
+                      
+                        src="https://unicorn-images.b-cdn.net/d5398bac-e244-4246-9e9a-7e94e7b3ea84?optimizer=gif"
+                        srcset="https://unicorn-images.b-cdn.net/d5398bac-e244-4246-9e9a-7e94e7b3ea84?optimizer=gif&amp;width=290&amp;height=230 290w,https://unicorn-images.b-cdn.net/d5398bac-e244-4246-9e9a-7e94e7b3ea84?optimizer=gif&amp;width=345&amp;height=273 345w,https://unicorn-images.b-cdn.net/d5398bac-e244-4246-9e9a-7e94e7b3ea84?optimizer=gif&amp;width=395&amp;height=312 395w,https://unicorn-images.b-cdn.net/d5398bac-e244-4246-9e9a-7e94e7b3ea84?optimizer=gif&amp;width=570&amp;height=451 570w,https://unicorn-images.b-cdn.net/d5398bac-e244-4246-9e9a-7e94e7b3ea84?optimizer=gif&amp;width=720&amp;height=569 720w,https://unicorn-images.b-cdn.net/d5398bac-e244-4246-9e9a-7e94e7b3ea84?optimizer=gif&amp;width=369&amp;height=292 369w,https://unicorn-images.b-cdn.net/d5398bac-e244-4246-9e9a-7e94e7b3ea84?optimizer=gif&amp;width=525&amp;height=415 525w,https://unicorn-images.b-cdn.net/d5398bac-e244-4246-9e9a-7e94e7b3ea84?optimizer=gif&amp;width=580&amp;height=460 580w,https://unicorn-images.b-cdn.net/d5398bac-e244-4246-9e9a-7e94e7b3ea84?optimizer=gif&amp;width=690&amp;height=546 690w,https://unicorn-images.b-cdn.net/d5398bac-e244-4246-9e9a-7e94e7b3ea84?optimizer=gif&amp;width=790&amp;height=624 790w,https://unicorn-images.b-cdn.net/d5398bac-e244-4246-9e9a-7e94e7b3ea84?optimizer=gif&amp;width=1140&amp;height=902 1140w,https://unicorn-images.b-cdn.net/d5398bac-e244-4246-9e9a-7e94e7b3ea84?optimizer=gif&amp;width=1379&amp;height=1089 1379w,https://unicorn-images.b-cdn.net/d5398bac-e244-4246-9e9a-7e94e7b3ea84?optimizer=gif&amp;width=870&amp;height=690 870w,https://unicorn-images.b-cdn.net/d5398bac-e244-4246-9e9a-7e94e7b3ea84?optimizer=gif&amp;width=1035&amp;height=819 1035w,https://unicorn-images.b-cdn.net/d5398bac-e244-4246-9e9a-7e94e7b3ea84?optimizer=gif&amp;width=1185&amp;height=936 1185w,https://unicorn-images.b-cdn.net/d5398bac-e244-4246-9e9a-7e94e7b3ea84?optimizer=gif&amp;width=1379&amp;height=1089 1379w,"
+                        sizes="(max-width: 320px) 290px,(max-width: 375px) 345px,(max-width: 425px) 395px,(max-width: 600px) 570px,(max-width: 750px) 720px,(max-width: 768px) 369px,525px"
+                      
+
+                    />
+                  </div>
+                  </li>
+                
+              
+
+						
+
+              
+                
+                  
+                  <li
+                    class="tabs-04__item_box js-tab-content "
+                    data-index="tab-7"
+                    data-group="my-images-group-tabs-04-59431"
+                  >
+                    
+                      <div class="tabs-04__button_item tabs-04__button_item--mobile-only">
+                        <button
+                            class="tabs-04__button state-active-tab"
+                            type="button"
+                            data-index="tab-7"
+                            data-group="my-images-group-tabs-04-59431">
+                          <h2 class="content-text def-12 tabs-04__button_title">Preview Data</h2>
+                          <div class="content-text tabs-04__button_text">examine the data before they go into the backend</div>
+                        </button>
+                      </div>
+                    
+                  <div 
+                    class="tabs-04__item js-tab-content-item"
+                    data-height="793"
+                  >
+                    <img 
+                      loading="lazy" 
+                      class="tabs-04__img js-lightbox-single-image" 
+                      alt="Iscreen shoter   google chrome   230628134438"
+                      data-width="1631"
+                      data-height="793"
+
+                      
+                        src="https://unicorn-images.b-cdn.net/9fc852a0-6c60-4f73-94e8-0b99a0b96116?optimizer=gif"
+                        srcset="https://unicorn-images.b-cdn.net/9fc852a0-6c60-4f73-94e8-0b99a0b96116?optimizer=gif&amp;width=290&amp;height=141 290w,https://unicorn-images.b-cdn.net/9fc852a0-6c60-4f73-94e8-0b99a0b96116?optimizer=gif&amp;width=345&amp;height=168 345w,https://unicorn-images.b-cdn.net/9fc852a0-6c60-4f73-94e8-0b99a0b96116?optimizer=gif&amp;width=395&amp;height=193 395w,https://unicorn-images.b-cdn.net/9fc852a0-6c60-4f73-94e8-0b99a0b96116?optimizer=gif&amp;width=570&amp;height=278 570w,https://unicorn-images.b-cdn.net/9fc852a0-6c60-4f73-94e8-0b99a0b96116?optimizer=gif&amp;width=720&amp;height=351 720w,https://unicorn-images.b-cdn.net/9fc852a0-6c60-4f73-94e8-0b99a0b96116?optimizer=gif&amp;width=369&amp;height=180 369w,https://unicorn-images.b-cdn.net/9fc852a0-6c60-4f73-94e8-0b99a0b96116?optimizer=gif&amp;width=525&amp;height=256 525w,https://unicorn-images.b-cdn.net/9fc852a0-6c60-4f73-94e8-0b99a0b96116?optimizer=gif&amp;width=580&amp;height=282 580w,https://unicorn-images.b-cdn.net/9fc852a0-6c60-4f73-94e8-0b99a0b96116?optimizer=gif&amp;width=690&amp;height=336 690w,https://unicorn-images.b-cdn.net/9fc852a0-6c60-4f73-94e8-0b99a0b96116?optimizer=gif&amp;width=790&amp;height=386 790w,https://unicorn-images.b-cdn.net/9fc852a0-6c60-4f73-94e8-0b99a0b96116?optimizer=gif&amp;width=1140&amp;height=556 1140w,https://unicorn-images.b-cdn.net/9fc852a0-6c60-4f73-94e8-0b99a0b96116?optimizer=gif&amp;width=1440&amp;height=702 1440w,https://unicorn-images.b-cdn.net/9fc852a0-6c60-4f73-94e8-0b99a0b96116?optimizer=gif&amp;width=738&amp;height=360 738w,https://unicorn-images.b-cdn.net/9fc852a0-6c60-4f73-94e8-0b99a0b96116?optimizer=gif&amp;width=1050&amp;height=512 1050w,https://unicorn-images.b-cdn.net/9fc852a0-6c60-4f73-94e8-0b99a0b96116?optimizer=gif&amp;width=870&amp;height=423 870w,https://unicorn-images.b-cdn.net/9fc852a0-6c60-4f73-94e8-0b99a0b96116?optimizer=gif&amp;width=1035&amp;height=504 1035w,https://unicorn-images.b-cdn.net/9fc852a0-6c60-4f73-94e8-0b99a0b96116?optimizer=gif&amp;width=1185&amp;height=579 1185w,https://unicorn-images.b-cdn.net/9fc852a0-6c60-4f73-94e8-0b99a0b96116?optimizer=gif&amp;width=1631&amp;height=793 1631w,"
+                        sizes="(max-width: 320px) 290px,(max-width: 375px) 345px,(max-width: 425px) 395px,(max-width: 600px) 570px,(max-width: 750px) 720px,(max-width: 768px) 369px,525px"
+                      
+
+                    />
+                  </div>
+                  </li>
+                
+              
+
+						
+
+              
+                
+              
+
+						
+					</ul>
+				</div>
+				<ul class="tabs-04__buttons_list">
+					
+						
+							<li class="tabs-04__button_item">
+								<button
+										class="tabs-04__button  state-active-tab   js-open-tab"
+										type="button"
+										data-index="tab-0"
+										data-group="my-images-group-tabs-04-59431">
+									<h2 class="content-text def-12 tabs-04__button_title">Create, Update and Download</h2>
+									<div class="content-text tabs-04__button_text">It is possible to create and update records from Excel files.</div>
+								</button>
+							</li>
+						
+					
+						
+							<li class="tabs-04__button_item">
+								<button
+										class="tabs-04__button  js-open-tab"
+										type="button"
+										data-index="tab-1"
+										data-group="my-images-group-tabs-04-59431">
+									<h2 class="content-text def-12 tabs-04__button_title">Open Source and Made in Germany 🇩🇪</h2>
+									<div class="content-text tabs-04__button_text"></div>
+								</button>
+							</li>
+						
+					
+						
+							<li class="tabs-04__button_item">
+								<button
+										class="tabs-04__button  js-open-tab"
+										type="button"
+										data-index="tab-2"
+										data-group="my-images-group-tabs-04-59431">
+									<h2 class="content-text def-12 tabs-04__button_title">Backend agnostic</h2>
+									<div class="content-text tabs-04__button_text">Just the data is read from spreadsheet in the frontend and sent to the backend using standard UI5 APIs. The file is not send to the backend.
+Every SAP OData Service possible (CAP, RAP, SEGW and ECC or S/4)</div>
+								</button>
+							</li>
+						
+					
+						
+							<li class="tabs-04__button_item">
+								<button
+										class="tabs-04__button  js-open-tab"
+										type="button"
+										data-index="tab-3"
+										data-group="my-images-group-tabs-04-59431">
+									<h2 class="content-text def-12 tabs-04__button_title">Support of many Scenarios</h2>
+									<div class="content-text tabs-04__button_text">Use in Fiori Elements or Freestyle from UI5 Version 1.71 up to 2.0</div>
+								</button>
+							</li>
+						
+					
+						
+							<li class="tabs-04__button_item">
+								<button
+										class="tabs-04__button  js-open-tab"
+										type="button"
+										data-index="tab-4"
+										data-group="my-images-group-tabs-04-59431">
+									<h2 class="content-text def-12 tabs-04__button_title">Multiple Languages</h2>
+									<div class="content-text tabs-04__button_text">Currently Available is german, english, french, spanish, italian, japanese, hindi and chinese</div>
+								</button>
+							</li>
+						
+					
+						
+							<li class="tabs-04__button_item">
+								<button
+										class="tabs-04__button  js-open-tab"
+										type="button"
+										data-index="tab-5"
+										data-group="my-images-group-tabs-04-59431">
+									<h2 class="content-text def-12 tabs-04__button_title">Easy to Implement</h2>
+									<div class="content-text tabs-04__button_text">&quot;Drop-in&quot; into your application</div>
+								</button>
+							</li>
+						
+					
+						
+							<li class="tabs-04__button_item">
+								<button
+										class="tabs-04__button  js-open-tab"
+										type="button"
+										data-index="tab-6"
+										data-group="my-images-group-tabs-04-59431">
+									<h2 class="content-text def-12 tabs-04__button_title">Many Configurations</h2>
+									<div class="content-text tabs-04__button_text">Options are available to customize to your requirement</div>
+								</button>
+							</li>
+						
+					
+						
+							<li class="tabs-04__button_item">
+								<button
+										class="tabs-04__button  js-open-tab"
+										type="button"
+										data-index="tab-7"
+										data-group="my-images-group-tabs-04-59431">
+									<h2 class="content-text def-12 tabs-04__button_title">Preview Data</h2>
+									<div class="content-text tabs-04__button_text">examine the data before they go into the backend</div>
+								</button>
+							</li>
+						
+					
+						
+							<li class="tabs-04__button_item">
+								<button
+										class="tabs-04__button  js-open-tab"
+										type="button"
+										data-index="tab-8"
+										data-group="my-images-group-tabs-04-59431">
+									<h2 class="content-text def-12 tabs-04__button_title">Secure</h2>
+									<div class="content-text tabs-04__button_text">No files are send to the backend. Files are read on the frontend and only data is sent to the backend.</div>
+								</button>
+							</li>
+						
+					
+				</ul>
+			</div>
+			<div class="bottom_cta">
+				
+	
+<div class="buttons-set"><ul class="buttons-set__list"><li class="buttons-set__item"><a
+				 data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url="" data-cancel-payment-url=""
+
+				 class="button button--accent-outline " href="https://docs.spreadsheet-importer.com/" target="_blank"    ><span class="button__text">Learn more</span></a></li></ul></div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+      
+		</div>
+	</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+	<div 
+    class="page-component__bg_image_box    bg-white-color   slider-10-parent  is-not-first-component"
+    id="slider-10-176751"
+    
+    
+  >
+		
+		<div 
+      class="page-component__bg_overlay_box " 
+      style=""
+    >
+			
+		</div>
+    
+		<div class="page-component__wrapper" style="z-index: 14;padding-top:50px;padding-bottom:50px;">
+      
+        
+
+	
+  
+  
+  
+	<div class="slider-10 graphics-image default-graphics-image">
+		
+
+
+	
+	
+	<div class="container container--small">
+		<div class="title-box title-box--center">
+			
+				
+					<h2 class="title-text heading " >See it in Action</h2>
+				
+			
+			
+				<div class="subtitle-text title-box__text content_box "><p>A sneak peek into the functionality of Spreadsheet Importer.</p>
+<p>The Live Demo is Fiori Elements Application with OData V4 on UI5 Version 1.120.<br>The data is reset every hour on the hour.</p>
+</div>
+			
+		</div>
+	</div>
+
+
+    
+		<div class="container slider-10__wrapper">
+			<div class="slider-10__slider_container">
+				<div class="slider slider-10__slider">
+					<div class="slider__arrow slider__arrow--prev">
+						<button class="circle-button js-prev-arrow circle-button--icon circle-button--light-bg" type="button"><span class="icon"><svg width="24" height="17" viewBox="0 0 24 17" xmlns="http://www.w3.org/2000/svg"><g id="styleguide" fill="none" fill-rule="evenodd"><g id="Unicorn-Styleguide" transform="translate(-121 -2006)" fill-rule="nonzero" fill="#00396B" class="fill-main"><g id="Icons" transform="translate(55 1963)"><g id="arrow-pointing-to-right" transform="translate(66 43)"><path d="M23.673 7.688L16.531.336a1.094 1.094 0 0 0-1.578 0 1.173 1.173 0 0 0 0 1.625l5.237 5.39H1.116C.5 7.351 0 7.866 0 8.5s.5 1.149 1.116 1.149H20.19l-5.237 5.39a1.173 1.173 0 0 0 0 1.625 1.097 1.097 0 0 0 1.578 0l7.142-7.352a1.173 1.173 0 0 0 0-1.624z" id="Shape" transform="matrix(-1 0 0 1 24 0)"/></g></g></g></g></svg></span>
+						</button>
+					</div>
+					<div class="slider__arrow slider__arrow--next">
+						<button class="circle-button js-next-arrow circle-button--icon circle-button--light-bg" type="button"><span class="icon"><svg viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg"><path d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z" fill-rule="nonzero" fill="#00396B" class="fill-main"/></svg></span>
+						</button>
+					</div>
+					<ul class="slider__box js-slider" data-slider-config="{&quot;dots&quot;: false, &quot;infinite&quot;: true, &quot;speed&quot;: 300, &quot;fade&quot;: true, &quot;cssEase&quot;: &quot;ease-out&quot;, &quot;adaptiveHeight&quot;: false, &quot;centerMode&quot;: true, &quot;variableWidth&quot;: false, &quot;slidesToShow&quot;: 1, &quot;lazyLoad&quot;: &quot;ondemand&quot;, &quot;focusOnSelect&quot;: false, &quot;arrows&quot;: true, &quot;responsive&quot;: [{&quot;breakpoint&quot;: 440, &quot;settings&quot;: {&quot;autoplay&quot;: true, &quot;autoplaySpeed&quot;: 1400}}]}">
+						
+            
+              
+                  
+
+                  
+                    
+                  
+
+                  <li class="slider-10__item slider__item">
+                    <div class="slider-10__img">
+                       
+
+
+
+
+
+<div class="mockup_v2 mockup_v2--samsung_galaxy_s20_ultra_cosmic_black">
+  <div class="mockup_v2__img_box">
+    <div 
+        class="mockup_v2__screenshot mockup_v2__area"
+        
+    >
+      
+
+        
+        <img
+          loading="lazy"
+          class="mockup_v2__screenshot_img"
+          alt="Wax mobile 3"
+          
+            src="https://unicorn-images.b-cdn.net/aaa48e7c-e736-4dd2-9578-626f9939e482?optimizer=gif"
+            srcset="https://unicorn-images.b-cdn.net/aaa48e7c-e736-4dd2-9578-626f9939e482?optimizer=gif&amp;width=225&amp;height=499 225w,https://unicorn-images.b-cdn.net/aaa48e7c-e736-4dd2-9578-626f9939e482?optimizer=gif&amp;width=270&amp;height=599 270w,https://unicorn-images.b-cdn.net/aaa48e7c-e736-4dd2-9578-626f9939e482?optimizer=gif&amp;width=274&amp;height=607 274w,https://unicorn-images.b-cdn.net/aaa48e7c-e736-4dd2-9578-626f9939e482?optimizer=gif&amp;width=274&amp;height=607 274w,"
+            sizes="(max-width: 750px) 225px,270px"
+          
+        />
+        
+
+      
+    </div>
+    <img
+      loading="lazy"
+      class="mockup_v2__device_img js-tab-content-item"
+      alt="Device frame"
+      
+
+      
+        src="https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif"
+        srcset="https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=195&amp;height=382 195w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=245&amp;height=480 245w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=390&amp;height=764 390w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=490&amp;height=960 490w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=585&amp;height=1146 585w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=735&amp;height=1440 735w,"
+        sizes="(max-width: 750px) 195px,245px"
+      
+    />
+  </div>
+</div>
+
+
+
+
+                    </div>
+                  </li>
+                
+              
+              
+						
+            
+              
+                  
+
+                  
+                    
+                  
+
+                  <li class="slider-10__item slider__item">
+                    <div class="slider-10__img">
+                       
+
+
+
+
+
+<div class="mockup_v2 mockup_v2--samsung_galaxy_s20_ultra_cosmic_black">
+  <div class="mockup_v2__img_box">
+    <div 
+        class="mockup_v2__screenshot mockup_v2__area"
+        
+    >
+      
+
+        
+        <img
+          loading="lazy"
+          class="mockup_v2__screenshot_img"
+          alt="Iscreen shoter   google chrome   230628132646"
+          
+            src="https://unicorn-images.b-cdn.net/6db17589-a369-400a-bbeb-fd0b506b7932?optimizer=gif"
+            srcset="https://unicorn-images.b-cdn.net/6db17589-a369-400a-bbeb-fd0b506b7932?optimizer=gif&amp;width=225&amp;height=499 225w,https://unicorn-images.b-cdn.net/6db17589-a369-400a-bbeb-fd0b506b7932?optimizer=gif&amp;width=270&amp;height=599 270w,https://unicorn-images.b-cdn.net/6db17589-a369-400a-bbeb-fd0b506b7932?optimizer=gif&amp;width=274&amp;height=607 274w,https://unicorn-images.b-cdn.net/6db17589-a369-400a-bbeb-fd0b506b7932?optimizer=gif&amp;width=274&amp;height=607 274w,"
+            sizes="(max-width: 750px) 225px,270px"
+          
+        />
+        
+
+      
+    </div>
+    <img
+      loading="lazy"
+      class="mockup_v2__device_img js-tab-content-item"
+      alt="Device frame"
+      
+
+      
+        src="https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif"
+        srcset="https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=195&amp;height=382 195w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=245&amp;height=480 245w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=390&amp;height=764 390w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=490&amp;height=960 490w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=585&amp;height=1146 585w,https://unicorn-images.b-cdn.net/96c9487e-1cf6-4d8f-a292-b59be4b54410?optimizer=gif&amp;width=735&amp;height=1440 735w,"
+        sizes="(max-width: 750px) 195px,245px"
+      
+    />
+  </div>
+</div>
+
+
+
+
+                    </div>
+                  </li>
+                
+              
+              
+						
+					</ul>
+				</div>
+
+			</div>
+			<div class="slider-10__text_container">
+				
+					<li class="slider-10__feature">
+            
+						
+
+	<div class="feature   ">
+		<h3 class="feature__title">
+			
+				<div class="feature__icon">
+		          <span class="icon" data="{&#39;type&#39;: &#39;abstractIcon&#39;, &#39;emojiSrc&#39;: &#39;1f381.svg&#39;, &#39;uploadedSrc&#39;: &#39;&#39;, &#39;lineaIconSrc&#39;: &#39;&#39;, &#39;abstractIconId&#39;: &#39;1&#39;, &#39;uploadedHeight&#39;: 30}">
+			          
+
+	
+	
+		<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#E9F1FF" class="fill-bg-light" cx="20" cy="20" r="20"/><path fill="#4D61FC" class="fill-main" d="M13 13h6v6h-6zM21 13h6v6h-6zM13 21h6v6h-6z"/><path fill="#00396B" class="fill-secondary" d="M21 21h6v6h-6z"/></g></svg>
+	
+
+
+		          </span>
+				</div>
+			
+			<span class="title-text--inner def-12 feature__title_text">
+                Data Upload
+            </span>
+		</h3>
+		<div class="feature__content">
+            <span class="content-text feature__content_text content_box">
+              <p>Upload your Spreadsheets</p>
+
+            </span>
+		</div>
+		
+	</div>
+
+
+					</li>
+				
+			</div>
+		</div>
+        <div class="bottom_cta">
+            
+	
+<div class="buttons-set"><ul class="buttons-set__list"><li class="buttons-set__item"><a
+				 data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url="" data-cancel-payment-url=""
+
+				 class="button button--accent-outline " href="https://livedemo.spreadsheet-importer.com/" target="_blank"    ><span class="button__text">Try it now</span></a></li></ul></div>
+
+        </div>
+	</div>
+
+
+
+      
+		</div>
+	</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+	<div 
+    class="page-component__bg_image_box    page-component__bg_image_box--dark-bg  bg-accent-color   uni-is-dark-bg  features-09-parent  is-not-first-component"
+    id="features-09-888271"
+    
+    
+  >
+		
+		<div 
+      class="page-component__bg_overlay_box " 
+      style=""
+    >
+			
+		</div>
+    
+		<div class="page-component__wrapper" style="z-index: 13;padding-top:30px;padding-bottom:50px;">
+      
+        
+	
+	
+	<div class="features-09">
+		
+
+
+	
+	
+	<div class="container container--small">
+		<div class="title-box title-box--center">
+			
+				
+					<h2 class="title-text heading  text-white" >Spreadsheet Importer Pricing</h2>
+				
+			
+			
+				<div class="subtitle-text title-box__text content_box  text-white"><h3>Which Edition is Right for You?</h3>
+<ul>
+<li>Choose <strong>1.x</strong> if you need a purely Apache 2.0–licensed solution and don’t require new features or official support.<br>&nbsp;</li>
+<li>Choose <strong>2.x</strong> if you want ongoing development and new capabilities, with the flexibility to evaluate at no cost and upgrade to a production license when needed.</li>
+</ul>
+</div>
+			
+		</div>
+	</div>
+
+
+		<div class="container container--large features-09__container">
+			<ul class="features-09__list">
+				
+					
+						<li class="sh-3 card-container features-09__item  features-09__item--new  ">
+							
+								<span class="content-text def-10 tag  "><span class="tag__text">FREE</span></span>
+							
+							<h3 class="def-20 title-text--inner features-09__title">Community Edition (1.x)</h3>
+							<div class="content-text features-09__text content_box"><p><strong>Apache 2.0 Licensed</strong>: Completely free and open-source.<br></p>
+<p><strong>Stable 1.x Releases</strong>: Ideal for those who need a fully open-source solution without ongoing development on new features.<br></p>
+<p><strong>Community-Driven</strong>: No official support or guaranteed updates, but bugs and improvements can be submitted via GitHub issues.</p>
+</div>
+							<div class="feature__button_box">
+								
+									
+
+
+
+
+
+
+
+	
+	
+  
+	
+		<a
+
+				 data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url="" data-cancel-payment-url=""
+
+				class="button button--empty  button--accent-outline"
+				href="https://github.com/spreadsheetimporter/ui5-cc-spreadsheetimporter#license"
+						target="_blank"   
+						
+		>
+			<span class="button__text">Get it now</span>
+			<span class="icon">
+		        <svg
+				        viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg"><path
+				        d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z"
+				        fill-rule="nonzero" fill="#00396B"></path>
+		        </svg>
+            </span>
+		</a>
+	
+
+
+								
+							</div>
+						</li>
+					
+				
+					
+						<li class="sh-3 card-container features-09__item  ">
+							
+							<h3 class="def-20 title-text--inner features-09__title">Commercial Edition (2.x)</h3>
+							<div class="content-text features-09__text content_box"><p><strong>Flexible Licensing</strong>: Source-available under a commercial license.</p>
+<p><strong>Free for Non-Production</strong>: Develop and test at no cost. Move to production when you’re ready.</p>
+<p><strong>Paid License for Production</strong>: Required for live usage or commercial distribution/resale of the software.</p>
+<p><strong>Optional Maintenance</strong>: Priority support and updates are available under a separate agreement.</p>
+<p>Contact for more info: marian@marianzeis.de</p>
+</div>
+							<div class="feature__button_box">
+								
+									
+
+
+
+
+
+
+
+	
+	
+  
+	
+		<a
+
+				 data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url="" data-cancel-payment-url=""
+
+				class="button button--empty  button--accent-outline"
+				href="https://github.com/spreadsheetimporter/ui5-cc-spreadsheetimporter/blob/main/LICENSE.md"
+						target="_blank"   
+						
+		>
+			<span class="button__text">License Information</span>
+			<span class="icon">
+		        <svg
+				        viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg"><path
+				        d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z"
+				        fill-rule="nonzero" fill="#00396B"></path>
+		        </svg>
+            </span>
+		</a>
+	
+
+
+								
+							</div>
+						</li>
+					
+				
+			</ul>
+			<div class="bottom_cta">
+				
+	
+
+
+			</div>
+		</div>
+	</div>
+
+
+      
+		</div>
+	</div>
+  
+    <style>
+      #features-09-888271 .container--small {
+    max-width: 1200px;
+}
+
+/* Features */
+
+#features-09-888271 .features-09__list {
+    margin: 0;
+    gap: 16px;
+}
+
+#features-09-888271 .features-09__item {
+    width: calc((100% - 32px) / 3);
+    margin: 0;
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+   #features-09-888271 .features-09__item {
+    width: calc((100% - 16) / 2);
+}
+}
+
+@media (max-width: 500px) {
+   #features-09-888271 .features-09__item {
+    width: 100%;
+}
+}
+
+#features-09-888271 .features-09__text {
+    display: flex;
+    flex-direction: column;
+}
+
+#features-09-888271 .feature__button_box {
+    padding-top: 16px;
+    margin-top: auto;
+}
+
+
+/* Dark BG */
+
+#features-09-888271.uni-is-dark-bg .features-09__item {
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,0.12);
+    
+}
+#features-09-888271.uni-is-dark-bg .features-09__title {
+    color: white;
+}
+#features-09-888271.uni-is-dark-bg .features-09__text {
+    color: rgba(256,256,256,0.8);
+}
+    </style>
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+	<div 
+    class="page-component__bg_image_box    bg-white-color   links-04-parent  is-not-first-component"
+    id="links-04-878011"
+    
+    
+  >
+		
+		<div 
+      class="page-component__bg_overlay_box " 
+      style=""
+    >
+			
+		</div>
+    
+		<div class="page-component__wrapper" style="z-index: 12;padding-top:50px;padding-bottom:70px;">
+      
+        
+	
+	
+	<div class="links-04">
+		
+
+
+	
+	
+	<div class="container container--small">
+		<div class="title-box title-box--center">
+			
+				
+					<h2 class="title-text heading " >Blog Posts</h2>
+				
+			
+			
+		</div>
+	</div>
+
+
+		<div class="container container--mid">
+			<ul class="links-04__list">
+				
+					
+						<li class="sh-4 card-container links-04__item">
+							<h3 class="def-18_72 title-text--inner links-04__title">Introducing Deep Export for Multi-Level Data Extraction in UI5 and Fiori Elements</h3>
+							<div class="content-text links-04__text">This post explains the new feature to deep download data (09.12.2024)</div>
+							<div class="links-04__link feature__button_box">
+								
+									
+
+
+
+
+
+
+
+	
+	
+  
+	
+		<a
+
+				 data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url="" data-cancel-payment-url=""
+
+				class="button button--empty  button--accent-outline"
+				href="https://community.sap.com/t5/technology-blogs-by-members/introducing-deep-export-for-multi-level-data-extraction-in-ui5-and-fiori/ba-p/13958798"
+						target="_blank"   
+						
+		>
+			<span class="button__text">Read More</span>
+			<span class="icon">
+		        <svg
+				        viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg"><path
+				        d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z"
+				        fill-rule="nonzero" fill="#00396B"></path>
+		        </svg>
+            </span>
+		</a>
+	
+
+
+								
+							</div>
+						</li>
+					
+				
+					
+						<li class="sh-4 card-container links-04__item">
+							<h3 class="def-18_72 title-text--inner links-04__title">UI5 Spreadsheet Importer Release V1.0</h3>
+							<div class="content-text links-04__text">This post celebrates the V1 release and explains the newest features (02.06.2024)</div>
+							<div class="links-04__link feature__button_box">
+								
+									
+
+
+
+
+
+
+
+	
+	
+  
+	
+		<a
+
+				 data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url="" data-cancel-payment-url=""
+
+				class="button button--empty  button--accent-outline"
+				href="https://community.sap.com/t5/technology-blogs-by-members/ui5-spreadsheet-importer-release-v1-0-0/ba-p/13719141"
+						target="_blank"   
+						
+		>
+			<span class="button__text">Read more</span>
+			<span class="icon">
+		        <svg
+				        viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg"><path
+				        d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z"
+				        fill-rule="nonzero" fill="#00396B"></path>
+		        </svg>
+            </span>
+		</a>
+	
+
+
+								
+							</div>
+						</li>
+					
+				
+					
+						<li class="sh-4 card-container links-04__item">
+							<h3 class="def-18_72 title-text--inner links-04__title">What’s New? Updates and Enhancements in the UI5 Excel Upload Component</h3>
+							<div class="content-text links-04__text">This post is a updates about the latest features in the Spreadsheet Importer (19.09.2023)</div>
+							<div class="links-04__link feature__button_box">
+								
+									
+
+
+
+
+
+
+
+	
+	
+  
+	
+		<a
+
+				 data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url="" data-cancel-payment-url=""
+
+				class="button button--empty  button--accent-outline"
+				href="https://blogs.sap.com/2023/09/19/whats-new-updates-and-enhancements-in-the-ui5-excel-upload-component/"
+						target="_blank"   
+						
+		>
+			<span class="button__text">Read more</span>
+			<span class="icon">
+		        <svg
+				        viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg"><path
+				        d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z"
+				        fill-rule="nonzero" fill="#00396B"></path>
+		        </svg>
+            </span>
+		</a>
+	
+
+
+								
+							</div>
+						</li>
+					
+				
+					
+						<li class="sh-4 card-container links-04__item">
+							<h3 class="def-18_72 title-text--inner links-04__title">How to add Excel Upload to any Standard SAP Fiori App (tutorial with App “Manage Banks”)</h3>
+							<div class="content-text links-04__text">This post explains how this component can be added to any Standard SAP Fiori App (11.08.2023)</div>
+							<div class="links-04__link feature__button_box">
+								
+									
+
+
+
+
+
+
+
+	
+	
+  
+	
+		<a
+
+				 data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url="" data-cancel-payment-url=""
+
+				class="button button--empty  button--accent-outline"
+				href="https://blogs.sap.com/2023/08/11/how-to-add-excel-upload-to-any-standard-sap-fiori-app-tutorial-with-app-manage-banks/"
+						target="_blank"   
+						
+		>
+			<span class="button__text">Read more</span>
+			<span class="icon">
+		        <svg
+				        viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg"><path
+				        d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z"
+				        fill-rule="nonzero" fill="#00396B"></path>
+		        </svg>
+            </span>
+		</a>
+	
+
+
+								
+							</div>
+						</li>
+					
+				
+					
+						<li class="sh-4 card-container links-04__item">
+							<h3 class="def-18_72 title-text--inner links-04__title">Load Data from a Excel File in UI5 and display the data in a Table</h3>
+							<div class="content-text links-04__text">This post explains the standalone mode to run the Importer with a List Binding (13.04.2023)</div>
+							<div class="links-04__link feature__button_box">
+								
+									
+
+
+
+
+
+
+
+	
+	
+  
+	
+		<a
+
+				 data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url="" data-cancel-payment-url=""
+
+				class="button button--empty  button--accent-outline"
+				href="https://blogs.sap.com/2023/04/13/load-data-from-a-excel-file-in-ui5-and-display-the-data-in-a-table-with-this-open-source-component/"
+						target="_blank"   
+						
+		>
+			<span class="button__text">Read more</span>
+			<span class="icon">
+		        <svg
+				        viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg"><path
+				        d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z"
+				        fill-rule="nonzero" fill="#00396B"></path>
+		        </svg>
+            </span>
+		</a>
+	
+
+
+								
+							</div>
+						</li>
+					
+				
+					
+						<li class="sh-4 card-container links-04__item">
+							<h3 class="def-18_72 title-text--inner links-04__title">Automating UI5 Testing with GitHub Actions and wdi5 in multiple scenarios</h3>
+							<div class="content-text links-04__text">This post how the tests are setup within GitHub Repository (05.04.2023)</div>
+							<div class="links-04__link feature__button_box">
+								
+									
+
+
+
+
+
+
+
+	
+	
+  
+	
+		<a
+
+				 data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url="" data-cancel-payment-url=""
+
+				class="button button--empty  button--accent-outline"
+				href="https://blogs.sap.com/2023/04/05/automating-ui5-testing-with-github-actions-and-wdi5-in-multiple-scenarios/"
+						target="_blank"   
+						
+		>
+			<span class="button__text">Read more</span>
+			<span class="icon">
+		        <svg
+				        viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg"><path
+				        d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z"
+				        fill-rule="nonzero" fill="#00396B"></path>
+		        </svg>
+            </span>
+		</a>
+	
+
+
+								
+							</div>
+						</li>
+					
+				
+					
+						<li class="sh-4 card-container links-04__item">
+							<h3 class="def-18_72 title-text--inner links-04__title">Create a UI5 custom library with versioning using a multi version namespace</h3>
+							<div class="content-text links-04__text">This post explains how you can create UI5 libraries/components with version namespace (12.03.2023)</div>
+							<div class="links-04__link feature__button_box">
+								
+									
+
+
+
+
+
+
+
+	
+	
+  
+	
+		<a
+
+				 data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url="" data-cancel-payment-url=""
+
+				class="button button--empty  button--accent-outline"
+				href="https://blogs.sap.com/2023/03/12/create-a-ui5-custom-library-with-versioning-using-a-multi-version-namespace/"
+						target="_blank"   
+						
+		>
+			<span class="button__text">Read more</span>
+			<span class="icon">
+		        <svg
+				        viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg"><path
+				        d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z"
+				        fill-rule="nonzero" fill="#00396B"></path>
+		        </svg>
+            </span>
+		</a>
+	
+
+
+								
+							</div>
+						</li>
+					
+				
+					
+						<li class="sh-4 card-container links-04__item">
+							<h3 class="def-18_72 title-text--inner links-04__title">Simplifying Excel Upload in Fiori Elements: The Open Source and Easy-to-Use UI5 Custom Control</h3>
+							<div class="content-text links-04__text">The first blog post introducing the Spreadsheet Importer (17.02.2023)</div>
+							<div class="links-04__link feature__button_box">
+								
+									
+
+
+
+
+
+
+
+	
+	
+  
+	
+		<a
+
+				 data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url="" data-cancel-payment-url=""
+
+				class="button button--empty  button--accent-outline"
+				href="https://blogs.sap.com/2023/02/17/simplifying-excel-upload-in-fiori-elements-the-open-source-and-easy-to-use-ui5-custom-control/"
+						target="_blank"   
+						
+		>
+			<span class="button__text">Read more</span>
+			<span class="icon">
+		        <svg
+				        viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg"><path
+				        d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z"
+				        fill-rule="nonzero" fill="#00396B"></path>
+		        </svg>
+            </span>
+		</a>
+	
+
+
+								
+							</div>
+						</li>
+					
+				
+			</ul>
+			<div class="bottom_cta">
+				
+	
+
+
+			</div>
+		</div>
+	</div>
+
+
+      
+		</div>
+	</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+	<div 
+    class="page-component__bg_image_box    bg-white-color   video-04-parent  is-not-first-component"
+    id="video-04-587211"
+    
+    
+  >
+		
+		<div 
+      class="page-component__bg_overlay_box " 
+      style=""
+    >
+			
+		</div>
+    
+		<div class="page-component__wrapper" style="z-index: 11;padding-top:50px;padding-bottom:70px;">
+      
+        
+
+	<div class="video-04">
+		
+
+
+	
+	
+	<div class="container container--small">
+		<div class="title-box title-box--center">
+			
+				
+					<h2 class="title-text heading " >Videos</h2>
+				
+			
+			
+				<div class="subtitle-text title-box__text content_box "><p><strong>Live Stream (04.11.24)</strong> - Overview of UI5 Spreadsheet Importer and Live Coding Session on how to use it</p>
+<p><strong>SAP Inside Track MUC (12.10.24)</strong> - Overview of UI5 Spreadsheet Importer with Release V1</p>
+<p><strong>UI5con 2024 (05.06.24)</strong> - Seamless Integration: Crafting the Perfect UI5 Development Environment - I present how i set up my development environment to develop the UI5 Spreadsheet Importer</p>
+<p><strong>SAP on Azure (07.10.23)</strong> - A quick overview over the features of Spreadsheet Importer</p>
+<p><strong>UI5con 2023 (09.08.23)</strong> - an overview of the features more aimed at developers</p>
+<p></p>
+</div>
+			
+		</div>
+	</div>
+
+
+		<div class="container video-04__container">
+			
+				
+					<div class="video-04__item">
+						
+
+<iframe title="Youtube video" loading="lazy" class="video-01__iframe video-01__iframe--youtube" src="https://www.youtube.com/embed/-e8lB_-laiQ?rel=0?rel=0"	frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen="true"></iframe>
+
+
+						<div class="spinner  spinner--black  "></div>
+					</div>
+				
+			
+				
+					<div class="video-04__item">
+						
+
+<iframe title="Youtube video" loading="lazy" class="video-01__iframe video-01__iframe--youtube" src="https://www.youtube.com/embed/_-_jjit4ROk?rel=0?rel=0"	frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen="true"></iframe>
+
+
+						<div class="spinner  spinner--black  "></div>
+					</div>
+				
+			
+				
+					<div class="video-04__item">
+						
+
+<iframe title="Youtube video" loading="lazy" class="video-01__iframe video-01__iframe--youtube" src="https://www.youtube.com/embed/dYRtAlyE0tc?rel=0?rel=0"	frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen="true"></iframe>
+
+
+						<div class="spinner  spinner--black  "></div>
+					</div>
+				
+			
+				
+					<div class="video-04__item">
+						
+
+<iframe title="Youtube video" loading="lazy" class="video-01__iframe video-01__iframe--youtube" src="https://www.youtube.com/embed/GNK96E9s-ac?rel=0?rel=0"	frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen="true"></iframe>
+
+
+						<div class="spinner  spinner--black  "></div>
+					</div>
+				
+			
+				
+					<div class="video-04__item">
+						
+
+<iframe title="Youtube video" loading="lazy" class="video-01__iframe video-01__iframe--youtube" src="https://www.youtube.com/embed/1SKNcaxdoXg?rel=0?rel=0"	frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen="true"></iframe>
+
+
+						<div class="spinner  spinner--black  "></div>
+					</div>
+				
+			
+				
+			
+		</div>
+		<div class="container">
+			<div class="bottom_cta">
+				
+	
+
+
+			</div>
+		</div>
+	</div>
+
+      
+		</div>
+	</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+	<div 
+    class="page-component__bg_image_box    bg-white-color   posts-04-parent  is-not-first-component"
+    id="posts-04-891731"
+    
+    
+  >
+		
+		<div 
+      class="page-component__bg_overlay_box " 
+      style=""
+    >
+			
+		</div>
+    
+		<div class="page-component__wrapper" style="z-index: 10;padding-top:50px;padding-bottom:50px;">
+      
+        
+	
+  
+	<div class="posts-04">
+		
+
+
+	
+	
+	<div class="container container--small">
+		<div class="title-box title-box--center">
+			
+				
+					<h2 class="title-text heading " >Explore More</h2>
+				
+			
+			
+				<div class="subtitle-text title-box__text content_box ">Learn more about Spreadsheet Importer</div>
+			
+		</div>
+	</div>
+
+
+		<div class="container container--mid">
+			<div class="sh-4 card-container posts-04__wrapper">
+				
+					
+						<a href="https://docs.spreadsheet-importer.com/" target="_blank" class="posts-04__item" >
+							
+                
+								
+
+	
+	
+		<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#E9F1FF" class="fill-bg-light" cx="20" cy="20" r="20"/><path fill="#4D61FC" class="fill-main" d="M13 15l6 1.92v9.6l-6-1.92z"/><path fill="#00396B" class="fill-secondary" d="M26 15l-6 1.92v9.6l6-1.92z"/></g></svg>
+	
+
+
+							
+							<h2 class="title-text--inner posts-04__title">Documentation</h2><span class="content-text def-14 posts-04__text">Everything you need to know to implement</span>
+						</a>
+					
+				
+					
+						<a href="https://github.com/marianfoo/ui5-cc-spreadsheetimporter" target="_blank" class="posts-04__item" >
+							
+                
+								
+
+	
+	
+		<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#E9F1FF" class="fill-bg-light" cx="20" cy="20" r="20"/><path fill="#4D61FC" class="fill-main" d="M16.94 13.96l5.94 5.94-5.94 5.94L11 19.9z"/><path fill="#00396B" class="fill-secondary" d="M22.86 13.96l5.94 5.94-5.94 5.94-5.94-5.94z"/><path fill="#E9F1FF" class="fill-bg-light" d="M19.86 16.96l2.969 2.97-2.97 2.97-2.97-2.97z"/></g></svg>
+	
+
+
+							
+							<h2 class="title-text--inner posts-04__title">GitHub Repository</h2><span class="content-text def-14 posts-04__text">Open Tickets or suggest Features here</span>
+						</a>
+					
+				
+					
+						<a href="https://www.youtube.com/watch?v=1SKNcaxdoXg" target="_blank" class="posts-04__item" >
+							
+                
+								
+
+	
+	
+		<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#E9F1FF" class="fill-bg-light" cx="20" cy="20" r="20"/><path fill="#4D61FC" class="fill-main" d="M13 13h6v6h-6zM21 13h6v6h-6zM13 21h6v6h-6z"/><path fill="#00396B" class="fill-secondary" d="M21 21h6v6h-6z"/></g></svg>
+	
+
+
+							
+							<h2 class="title-text--inner posts-04__title">UI5con 23 Presentation</h2><span class="content-text def-14 posts-04__text">A Developer Focused Talk about the Importer</span>
+						</a>
+					
+				
+			</div>
+			<div class="bottom_cta">
+				
+	
+
+
+			</div>
+		</div>
+	</div>
+
+
+      
+		</div>
+	</div>
+  
+  
+
+
+	
+	
+	
+	
+	
+  
+  
+  
+	<div 
+    class="popup-component js-custom-popup page-component__bg_image_box    bg-white-color  first_component   popup-component_no-image popup-01-parent is-not-first-component"
+    id="popup-01-70241"
+    
+    
+  >
+		<button class="popup-component__close-button js-close-custom-popup-button">
+			<svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M20.0806 17.9986L30.6275 5.42673C30.8043 5.2178 30.6556 4.90039 30.3824 4.90039H27.1762C26.9873 4.90039 26.8065 4.98477 26.682 5.12941L17.9833 15.4995L9.28465 5.12941C9.16411 4.98477 8.98331 4.90039 8.79045 4.90039H5.5842C5.31099 4.90039 5.16233 5.2178 5.33911 5.42673L15.886 17.9986L5.33911 30.5705C5.29951 30.6171 5.2741 30.674 5.26591 30.7346C5.25771 30.7952 5.26708 30.8568 5.29288 30.9122C5.31869 30.9677 5.35985 31.0145 5.41149 31.0472C5.46313 31.0799 5.52307 31.0972 5.5842 31.0968H8.79045C8.97929 31.0968 9.16009 31.0124 9.28465 30.8678L17.9833 20.4977L26.682 30.8678C26.8025 31.0124 26.9833 31.0968 27.1762 31.0968H30.3824C30.6556 31.0968 30.8043 30.7794 30.6275 30.5705L20.0806 17.9986Z" fill="white"/>
+			</svg>				
+		</button>
+		<div class="popup-component__bg_image_box">
+			
+			
+			<div 
+        class="page-component__bg_overlay_box "
+        style=""
+      >
+				
+			</div>
+			
+			<div class="page-component__wrapper" style="z-index: 10;padding-top: 1px;padding-bottom: 1px;">
+				
+
+
+
+    
+    
+    
+    
+    <div class="popup-01 graphics-image default-graphics-image">
+        <div class="container container--premid popup-01__container">
+            <div class="popup-01__left">
+                <div class="popup-01__content">
+                    
+                        <h2 class="title-text heading popup-01__heading">Get in Touch</h2>
+                    
+                    
+                        <p class="subtitle-text content_box popup-01__text"><p>If you need help to integrate this component into your process please contact me</p>
+</p>
+                    
+                    <div class="popup-01__cta-box">
+                        
+	
+<div class="buttons-set"><ul class="buttons-set__list"><li class="buttons-set__item"><a
+				 data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url="" data-cancel-payment-url=""
+
+				 class="button button--accent-bg " href="/" target="_blank"   onclick="window.location.href=&#39;mailto:marian@marianzeis.de?subject=UI5 Spreadsheet Importer Integration&#39;;"   ><span class="button__text">Contact us per email</span></a></li><li class="buttons-set__item"><a
+				 data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url="" data-cancel-payment-url=""
+
+				 class="button button--accent-bg " href="https://www.linkedin.com/in/marianzeis/" target="_blank"    ><span class="button__text">Contant us on LinkedIn</span></a></li></ul></div>
+
+                    </div>
+                </div>
+            </div>
+            
+              
+            
+        </div>
+    </div>
+
+
+
+
+
+			</div>
+		</div>
+	</div>
+  
+  
+
+
+	
+
+
+
+
+
+
+
+
+
+    
+	
+	
+        
+        <div class="bg-light_gray-color">
+            <footer 
+              class="footer-04 "
+              id="footer"
+              style=""
+              
+            >
+                <div class="footer-04__top">
+                    <div class="container">
+                        <div class="footer-04__top_wrapper ">
+                            
+                                
+	
+  
+	<div class="footer-04__col">
+		
+		
+			<div class="content-text def-14 footer-04__info content_box"><p>© 2024 Spreadsheet Importer. All rights reserved.</p>
+</div>
+		
+	</div>
+
+
+                            
+                            
+                                
+                                    <div class="footer-04__col">
+                                        <h3 class="def-18_72 title-text--inner footer-04__title">Support</h3>
+                                        <ul class="footer-04__list">
+                                            
+                                                
+                                                    <li class="footer-04__item">
+                                                        <a
+                                                                href="#features-09-888271"
+                                                                target="_self"
+                                                                class="content-text def-14 footer-04__link">
+                                                            Contact Us
+                                                        </a>
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li class="footer-04__item">
+                                                        <a
+                                                                href="https://github.com/marianfoo/ui5-cc-spreadsheetimporter/issues"
+                                                                target="_blank"
+                                                                class="content-text def-14 footer-04__link">
+                                                            Open Ticket
+                                                        </a>
+                                                    </li>
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                        </ul>
+                                    </div>
+                                
+                            
+                                
+                                    <div class="footer-04__col">
+                                        <h3 class="def-18_72 title-text--inner footer-04__title">Info</h3>
+                                        <ul class="footer-04__list">
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                                    <li class="footer-04__item">
+                                                        <a
+                                                                href="/impressum"
+                                                                target="_blank"
+                                                                class="content-text def-14 footer-04__link">
+                                                            Imprint
+                                                        </a>
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li class="footer-04__item">
+                                                        <a
+                                                                href="/privacy"
+                                                                target="_blank"
+                                                                class="content-text def-14 footer-04__link">
+                                                            Privacy Policy
+                                                        </a>
+                                                    </li>
+                                                
+                                            
+                                                
+                                            
+                                        </ul>
+                                    </div>
+                                
+                            
+                            
+                                <div class="footer-04__col">
+                                    
+                                    <div class="footer-04__social_box">
+                                        
+	
+	<div class="social-buttons  social-buttons--left ">
+		<ul class="social-buttons__list">
+		<li class="social-buttons__item"><a
+								class="social-buttons__link social-buttons__link--github"
+								href="https://github.com/marianfoo" target="_blank"><img
+                                loading="lazy"
+								class="social-buttons__icon"
+                                alt="github icon"
+								src="static/img/icons/social/color/github.svg"/></a></li><li class="social-buttons__item"><a
+								class="social-buttons__link social-buttons__link--twitter"
+								href="https://twitter.com/mianbsp" target="_blank"><img
+                                loading="lazy"
+								class="social-buttons__icon"
+                                alt="twitter icon"
+								src="static/img/icons/social/color/x.svg"/></a></li><li class="social-buttons__item"><a
+								class="social-buttons__link social-buttons__link--linkedin"
+								href="https://www.linkedin.com/in/marianzeis/" target="_blank"><img
+                                loading="lazy"
+								class="social-buttons__icon"
+                                alt="linkedin icon"
+								src="static/img/icons/social/color/linkedin.svg"/></a></li><li class="social-buttons__item"><a
+								class="social-buttons__link social-buttons__link--sap"
+								href="https://people.sap.com/mariannnn" target="_blank"><img
+                                loading="lazy"
+								class="social-buttons__icon"
+                                alt="sap icon"
+								src="static/img/icons/social/color/link.svg"/></a></li>
+		</ul>
+	</div>
+
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                    
+                        
+                            
+	
+	<div class="footer-04__bottom">
+		<div class="container">
+			<div class="footer-04__bottom_wrapper ">
+				
+					
+	
+<div class="buttons-set"><ul class="buttons-set__list"><li class="buttons-set__item"><a
+				 data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url="" data-cancel-payment-url=""
+
+				 class="button button--accent-bg " href="https://www.linkedin.com/company/98569448/" target="_blank"    ><span class="button__text">Follow us on LinkedIn</span></a></li></ul></div>
+
+				
+				<ul class="footer-04__bottom_links ">
+					
+            
+              <li class="footer-04__bottom_links_item">
+                <a target="_blank" href="mailto:marian@marianzeis.de" class="content-text def-12 footer-04__bottom_link footer-04__bottom_item">
+                  Email
+                </a>
+              </li>
+            
+					
+            
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+                        
+                    
+                    
+                </div>
+            </footer>
+        </div>
+	
+  
+  
+
+
+
+
+
+	<div class="popup-component__mask js-close-custom-popup-button js-custom-popup-mask"></div>
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="pswp__bg"></div>
+	<div class="pswp__scroll-wrap">
+		<div class="pswp__container">
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+		</div>
+		<div class="pswp__ui pswp__ui--hidden">
+			<div class="pswp__top-bar">
+				<div class="pswp__counter"></div>
+				<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+				<button class="pswp__button pswp__button--share" title="Share"></button>
+				<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+				<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+				<div class="pswp__preloader">
+					<div class="pswp__preloader__icn">
+						<div class="pswp__preloader__cut">
+							<div class="pswp__preloader__donut"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+				<div class="pswp__share-tooltip"></div>
+			</div>
+			<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+			<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+			<div class="pswp__caption">
+				<div class="pswp__caption__center"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<style>
+	.page-component__bg_image_box .page-component__bg_image_box .page-component__bg_overlay_box {
+        position: relative;
+	}
+	body .page-component__bg_overlay_box {
+		position: absolute;
+	}
+    .footer-02__text.content_box a{
+    	color: inherit !important;
+    }
+    .footer-04__info{
+	    font-size: 14px;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
